@@ -1,0 +1,8 @@
+DATA LOG 
+****************************
+Customer Name: Ryan
+Product: Cozy Nights Monarch
+Price: 1200.00
+VAT Amount: 180.00
+Commission Amount: 60.00
+Total Sales: 1440.00
