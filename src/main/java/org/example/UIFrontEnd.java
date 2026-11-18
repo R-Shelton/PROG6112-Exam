@@ -64,10 +64,11 @@ public class UIFrontEnd {
 
                 try {
                     double price = Double.parseDouble(priceText);
+                    ProductCalculations calculations = new ProductCalculations(price);
 
-                    VATamount = price * 0.15;
-                    commissionAmount = price * 0.05;
-                    totalSales = price + VATamount + commissionAmount;
+                    VATamount = calculations.getVat();
+                    commissionAmount = calculations.getCommission();
+                    totalSales = calculations.getTotal();
                     String summary = String.format(
                             "DATA LOG \n" + "****************************\n" +
                                     "Customer Name: %s\n" +
